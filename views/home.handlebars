@@ -1,0 +1,17 @@
+<form action="/store" method="post">
+  <label for="url">URL:</label>
+  <input type="text" id="url" name="url" placeholder="Paste video URL here" />
+  <button type="submit">Submit</button>
+</form>
+
+{{#if ok}}
+<div>
+  <p>Video added successfully!</p>
+</div>
+{{/if}}
+  
+{{#if error}}
+<div>
+  <p style="color: red; font-weight: 600">{{error}}</p>
+</div>
+{{/if}}

@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  podcast-download:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - /home/pi/podcasts/podcasts.txt:/usr/src/app/podcasts.txt
